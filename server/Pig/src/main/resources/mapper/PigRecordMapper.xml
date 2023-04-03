@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pig.mapper.PigRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.pig.POJO.DO.PigRecord">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="recordId" column="record_id" jdbcType="VARCHAR"/>
+            <result property="pigImg" column="pig_img" jdbcType="VARCHAR"/>
+            <result property="ageInDays" column="age_in_days" jdbcType="INTEGER"/>
+            <result property="weight" column="weight" jdbcType="INTEGER"/>
+            <result property="drinkingOfDay" column="drinking_of_day" jdbcType="VARCHAR"/>
+            <result property="eatingOfDay" column="eating_of_day" jdbcType="VARCHAR"/>
+            <result property="vaccination" column="vaccination" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="TINYINT"/>
+            <result property="isolation" column="isolation" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,record_id,pig_img,
+        age_in_days,weight,drinking_of_day,
+        eating_of_day,vaccination,create_time,
+        update_time,is_delete,isolation
+    </sql>
+</mapper>

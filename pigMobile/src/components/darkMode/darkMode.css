@@ -1,0 +1,19 @@
+:root {
+  --black: #222;
+  --white: #eee;
+  --outShadow: -2px -2px 5px #ffffff, 2px 2px 5px #A7ABBD;
+  --inShadow: -2px -2px 5px #ffffff inset, 2px 2px 5px #A7ABBD inset;
+  --dark: invert(100%);
+  --light: invert(0%);
+  --clear: brightness(100%);
+}
+
+.dark {
+  --black: #eee;
+  --white: #222;
+  --outShadow: -2px -2px 5px #363636, 2px 2px 5px #000000;
+  --inShadow: -2px -2px 5px #363636 inset, 2px 2px 5px #000000 inset;
+  --dark: invert(0%);
+  --light: invert(100%);
+  --clear: brightness(40%);
+}

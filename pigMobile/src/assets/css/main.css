@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  transition: 0.6s;
+}
+
+.card {
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px var(--white);
+  box-shadow: var(--outShadow);
+  color: var(--black);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transition: 0.4s;
+}
+
+.antiCard {
+  border-radius: 10px;
+  box-shadow: var(--inShadow);
+  color: var(--black);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transition: 0.4s;
+}
+
+.assembly {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+  transition: 0.4s;
+}
+
+.header {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.4em;
+  transition: 0.4s;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1em;
+}
